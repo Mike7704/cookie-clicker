@@ -1,0 +1,108 @@
+body {
+  /*margin-left: 17%;
+  margin-right: 17%;*/
+  min-height: 100vh;
+  background-image: url("./images/background.jpg");
+  font-family: "lemon";
+  color: white;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 3.2em;
+  padding: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.counter {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 2.5em;
+  padding: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.cookie {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cookie #cookie-button {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  background-image: url("./images/cookie-large.png");
+  background-size: cover;
+  width: 512px;
+  height: 512px;
+  border-radius: 50%;
+}
+
+.cookie #cookie-button:hover {
+  transform: scale(1.06);
+}
+
+.cookie #cookie-button:active {
+  transform: scale(1);
+}
+
+.store {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  gap: 10px;
+  font-size: 2em;
+  padding: 20px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.store h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.store .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 0.7em;
+}
+
+.store .item div {
+  flex: 1;
+  border: 1px solid white;
+  text-align: center;
+  padding: 5px;
+}
+
+.store .item button {
+  flex: 1;
+  border: 1px solid white;
+  padding: 5px;
+  font-family: "lemon";
+  font-size: 0.7em;
+  color: black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.store .item img {
+  width: 25px;
+  height: auto;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8em;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
