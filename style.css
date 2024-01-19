@@ -9,9 +9,12 @@ body {
 header {
   background-color: rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  font-size: 3.2em;
+  font-size: 3.3em;
   text-align: center;
   padding: 20px;
+  padding-bottom: 28px;
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }
 
 .counter {
@@ -20,6 +23,11 @@ header {
   font-size: 2.5em;
   text-align: center;
   padding: 20px;
+}
+
+.counter #cookie-cps {
+  font-size: 0.7em;
+  padding-top: 5px;
 }
 
 .cookie {
@@ -59,13 +67,16 @@ header {
 
 .store h2 {
   text-align: center;
-  padding-bottom: 20px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  padding-bottom: 26px;
 }
 
 .store .item-heading,
 .store .item {
   display: flex;
   align-items: center;
+  background-color: #153e58af;
   font-size: 0.7em;
 }
 
@@ -79,6 +90,10 @@ header {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.store .item-heading div {
+  background-color: #1d587caf;
 }
 
 .store .item-heading div:last-child,
@@ -125,10 +140,32 @@ header {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   border-top: 2px solid rgba(255, 255, 255, 0.5);
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.8em;
   text-align: center;
   padding: 20px;
+}
+
+footer #reset {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12%;
+  font: inherit;
+  color: white;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+footer #reset:hover {
+  background-color: #cfaf78;
+  color: #5a352b;
+  text-shadow: none;
 }
