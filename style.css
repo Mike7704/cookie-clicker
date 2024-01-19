@@ -1,27 +1,25 @@
 body {
-  /*margin-left: 17%;
-  margin-right: 17%;*/
-  min-height: 100vh;
   background-image: url("./images/background.jpg");
   font-family: "lemon";
   color: white;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
 }
 
 header {
   background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  font-size: 3.2em;
-  padding: 20px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  font-size: 3.2em;
+  text-align: center;
+  padding: 20px;
 }
 
 .counter {
   background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  font-size: 2.5em;
-  padding: 20px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  font-size: 2.5em;
+  text-align: center;
+  padding: 20px;
 }
 
 .cookie {
@@ -31,15 +29,15 @@ header {
 }
 
 .cookie #cookie-button {
-  transition: transform 0.3s ease;
-  cursor: pointer;
   background-color: transparent;
   border-color: transparent;
   background-image: url("./images/cookie-large.png");
   background-size: cover;
+  border-radius: 50%;
   width: 512px;
   height: 512px;
-  border-radius: 50%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .cookie #cookie-button:hover {
@@ -54,55 +52,83 @@ header {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
-  gap: 10px;
-  font-size: 2em;
-  padding: 20px;
   border-top: 2px solid rgba(255, 255, 255, 0.5);
+  font-size: 2em;
+  padding: 20px 15% 40px 15%;
 }
 
 .store h2 {
   text-align: center;
-  margin-bottom: 10px;
+  padding-bottom: 20px;
 }
 
+.store .item-heading,
 .store .item {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
   font-size: 0.7em;
 }
 
-.store .item div {
+.store .item-heading div,
+.store .item div,
+.store .item button {
   flex: 1;
-  border: 1px solid white;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
   text-align: center;
-  padding: 5px;
+  padding: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.store .item-heading div:last-child,
+.store .item-heading div:nth-child(2),
+.store .item div:nth-child(2) {
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.store .item-heading div:first-child,
+.store .item div:first-child {
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.store .item:last-child {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .store .item button {
-  flex: 1;
-  border: 1px solid white;
-  padding: 5px;
-  font-family: "lemon";
-  font-size: 0.7em;
-  color: black;
-  border-radius: 10px;
-  background-color: white;
+  background-color: transparent;
+  border: none;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  font: inherit;
+  color: white;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  padding: 6.8px 15px 6.8px 15px;
 }
 
-.store .item img {
-  width: 25px;
+.store .item button:hover {
+  background-color: #cfaf78;
+  color: #5a352b;
+  text-shadow: none;
+}
+
+.store .item button img {
+  display: inline-block;
+  width: 39px;
   height: auto;
+  padding-right: 10px;
   vertical-align: middle;
-  padding-right: 5px;
 }
 
 footer {
   background-color: rgba(0, 0, 0, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.8em;
   text-align: center;
   padding: 20px;
-  border-top: 2px solid rgba(255, 255, 255, 0.5);
 }
