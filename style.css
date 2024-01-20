@@ -9,7 +9,7 @@ body {
 header {
   background-color: rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  font-size: 3.3em;
+  font-size: 53px;
   text-align: center;
   padding: 20px;
   padding-bottom: 28px;
@@ -18,16 +18,19 @@ header {
 }
 
 .counter {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background-color: rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  font-size: 2.5em;
+  font-size: 40px;
   text-align: center;
   padding: 20px;
 }
 
 .counter #cookie-cps {
-  font-size: 0.7em;
-  padding-top: 5px;
+  font-size: 25px;
+  padding-top: 12px;
 }
 
 .cookie {
@@ -61,8 +64,8 @@ header {
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
   border-top: 2px solid rgba(255, 255, 255, 0.5);
-  font-size: 2em;
-  padding: 20px 15% 40px 15%;
+  font-size: 32px;
+  padding: 20px 10% 40px 10%;
 }
 
 .store h2 {
@@ -77,7 +80,7 @@ header {
   display: flex;
   align-items: center;
   background-color: #153e58af;
-  font-size: 0.7em;
+  font-size: 22px;
 }
 
 .store .item-heading div,
@@ -135,8 +138,12 @@ header {
   display: inline-block;
   width: 39px;
   height: auto;
-  padding-right: 10px;
+  padding-right: 2px;
   vertical-align: middle;
+}
+
+.store .item button #cost {
+  display: inline-block;
 }
 
 footer {
@@ -147,9 +154,13 @@ footer {
   background-color: rgba(0, 0, 0, 0.5);
   border-top: 2px solid rgba(255, 255, 255, 0.5);
   color: rgba(255, 255, 255, 0.5);
-  font-size: 0.8em;
+  font-size: 14px;
   text-align: center;
   padding: 20px;
+}
+
+footer p {
+  padding: 6px;
 }
 
 footer #reset {
@@ -157,11 +168,12 @@ footer #reset {
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 12%;
   font: inherit;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 footer #reset:hover {
