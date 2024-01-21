@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lemon"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon" />
     <script src="app.js" defer></script>
     <title>Cookie Clicker</title>
   </head>
@@ -22,7 +19,9 @@
 
     <div class="cookie">
       <button id="cookie-button"></button>
-      <!--<p>+1</p>-->
+      <audio id="click-audio">
+        <source src="./sounds/click.mp3" type="audio/mp3" />
+      </audio>
     </div>
 
     <div class="store">
@@ -126,7 +125,7 @@
       <div class="item">
         <div id="owned">1</div>
         <div>Double Click Power</div>
-        <div>Click Power: 1</div>
+        <div id="click-power">Click Power: 1</div>
         <button>
           <img src="./images/cookie-small.png" alt="Cookie Emoji" />
           <p id="cost">50</p>
