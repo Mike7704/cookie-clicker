@@ -181,3 +181,61 @@ footer #reset:hover {
   color: #5a352b;
   text-shadow: none;
 }
+
+/* Resize elements for smaller screens */
+@media screen and (max-width: 600px) {
+  header {
+    font-size: 38px;
+  }
+
+  .counter {
+    font-size: 32px;
+  }
+
+  .counter #cookie-cps {
+    font-size: 18px;
+  }
+
+  .cookie #cookie-button {
+    width: 320px;
+    height: 320px;
+  }
+
+  .store {
+    font-size: 24px;
+    padding: 20px 2% 40px 2%;
+  }
+
+  .store .item-heading,
+  .store .item {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .store .item-heading div,
+  .store .item div,
+  .store .item button {
+    white-space: wrap;
+    overflow: auto;
+    text-overflow: unset;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .store .item button {
+    white-space: wrap;
+    overflow: auto;
+    text-overflow: unset;
+    padding: 6.8px 10px 6.8px 10px;
+    height: 62px;
+  }
+
+  .store .item button img {
+    width: 30px;
+    height: auto;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
